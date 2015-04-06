@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<style type="text/css">
+		html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+		
+      }
+      canvas{
+
+    
+      	
+      }
+	  #snap{
+		  width:60px;
+		  height:60px;
+		  
+		  background:#DEDEDE;
+		  position:absolute;
+		  top:0;
+		  left:0;
+		  font-size:50px;
+		  border: 1px solid #000;
+		  top:20px;
+	  }
+	  #plus{
+		top:80px;
+	  }
+	  #snap{
+		top:10px;
+		left:10px;
+		color:#ff0000;
+	  }
+		
+	</style>
+    <title>Espy</title>
+
+   <script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+    <script src="js/hammer.js"></script>
+    <script src="libs/jquery/jquery.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="cordova.js"></script>
+</head>
+
+<body>
+
+	<canvas id="container">Canvas not loaded...</canvas>
+
+	<button  onclick="app.main.snap()" id="snap">R</button>
+
+	
+	<script src="js/main.js"></script>
+	<script src="js/drawLib.js"></script>
+	<script src="js/user.js"></script>
+	<script src="js/exhibit.js"></script>
+	
+</body>
+</html>
